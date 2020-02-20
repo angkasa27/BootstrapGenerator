@@ -23,10 +23,28 @@
   color: #61dafb;
 }
 
+.gaya {
+  font-family: 'Quicksand', sans-serif;
+  padding: 10px;
+}
+
+.kode {
+
+  font-family: 'Source Code Pro',
+    monospace;
+
+}
+
+.kecil {
+  font-size: small;
+  color: grey;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
