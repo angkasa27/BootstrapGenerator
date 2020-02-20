@@ -25,6 +25,9 @@ class App extends Component {
                 <Link to="/AlertGenerator" className="nav-item nav-link text-light">
                   Alert
                 </Link>
+                <Link to="/ButtonGenerator" className="nav-item nav-link text-light">
+                  Button
+                </Link>
                 <Link to="/CardGenerator" className="nav-item nav-link text-light">
                   Cards
                 </Link>

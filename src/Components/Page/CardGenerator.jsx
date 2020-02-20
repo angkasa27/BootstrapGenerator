@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Card from "./Card";
-import Hasil from "./HasilCard";
+import Card from "../Asset/Card";
+import Hasil from "../Asset/HasilCard";
 
 class CardGenerator extends Component {
   constructor() {
