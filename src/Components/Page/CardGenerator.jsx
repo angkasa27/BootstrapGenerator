@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Card from "../Asset/Card";
 import Hasil from "../Asset/HasilCard";
+import BackColor from "../Asset/BackgrounColor"
 
 class CardGenerator extends Component {
   constructor() {
@@ -14,11 +15,11 @@ class CardGenerator extends Component {
       namabtn: "kirim",
       cardbg: "primary",
       warnatxt: "light",
-      warnadasar: "light",
       alignbtn: "center",
       aligntext: "center",
       alignjudul: "center",
       shadow: "shadow",
+      warnadasar: "light",
       tes: true
     };
   }
@@ -79,7 +80,6 @@ class CardGenerator extends Component {
   render() {
     return (
       <div className="App container mb-5">
-        {/* <h1 className="mb-5 mt-3 text-center">Bootstrap Card Generator</h1> */}
 
         <h1 className="mb-5 mt-5 text-center">
           Card Generator
@@ -326,6 +326,7 @@ class CardGenerator extends Component {
                   success
                 </button>
               </div>
+
               {/* end */}
             </div>
           </div>

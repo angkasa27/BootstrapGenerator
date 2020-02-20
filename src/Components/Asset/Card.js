@@ -28,9 +28,9 @@ class Card extends Component {
           >
             {this.props.isikartu}
           </p>
-          <a className={"btn btn-" + this.props.warnabtn} href="#">
+          <button className={"btn btn-" + this.props.warnabtn}>
             {this.props.namabtn}
-          </a>
+          </button>
         </div>
       </div>
     );

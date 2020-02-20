@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Hasil from "../Asset/HasilAlert";
+// import Hasil from "../Asset/HasilButton";
 
 class ButtonGenerator extends Component {
     constructor() {
@@ -7,21 +7,39 @@ class ButtonGenerator extends Component {
         this.state = {
             tipe: "success",
             isi: "Send",
-            // warna: "success",
+            warnaO: "",
+            radius: "",
+            size: "",
+            warnadasar: "dark"
             // align: "center"
         };
     }
 
     //untuk mengubah tipe
-    changeTipeAlert = event => {
+    changeTipeButton = event => {
         this.setState({ tipe: event.target.value });
+    };
+    changeSizeButton = event => {
+        this.setState({ size: event.target.value });
     };
 
     //untuk mengubah isi
-    changeIsiAlert = event => {
+    changeIsiButton = event => {
         this.setState({ isi: event.target.value });
     };
 
+    changeWarnaButton = event => {
+        this.setState({ warnaO: event.target.value });
+    };
+
+    changeRadiusButton = event => {
+        this.setState({ radius: event.target.value });
+    };
+
+    //untuk mengubah warna background
+    changeWarnaDasar = event => {
+        this.setState({ warnadasar: event.target.value });
+    };
 
     render() {
         return (
@@ -31,188 +49,282 @@ class ButtonGenerator extends Component {
                 </h1>
 
                 <div className="row">
-                    <div className="col-5">
+                    <div className="col-4 border-right">
 
                         {/* Button Show */}
-                        <div className="row my-5">
-                            <button type={this.state.isi} class=" btn btn-primary">Primary</button>
+                        <div className={"row mx-1 mb-3 bg-" + this.state.warnadasar}>
+                            <div className="col my-5 justify-content-md-center">
+                                <button type="button" class={" btn " + this.state.size + " btn-" + this.state.tipe + " btn-outline-" + this.state.warnaO + " rounded" + this.state.radius}>{this.state.isi}</button>
+                            </div>
                         </div>
+
                         {/* End Button Show */}
 
-                        <div className="row">
-                            <Hasil
-                                tipe={this.state.tipe}
-                                warna={this.state.warna}
-                                align={this.state.align}
-                                judul={this.state.judul}
-                                isi={this.state.isi}
-                            /></div>
+                        {/*outline  */}
+                        <b className="text-center ">Jenis Outline Button</b>
+                        <div className="row mx-1 mt-1 mb-2">
+                            <button
+                                className="btn btn-secondary mx-2 col-auto"
+                                value="-lg"
+                                onClick={this.changeRadiusButton}
+                            >
+                                Rounded
+                                </button>
+                            <button
+                                className="btn btn-secondary mx-2 col-auto"
+                                value="-circle"
+                                onClick={this.changeRadiusButton}
+                            >
+                                Circle
+                                </button>
+                            <button
+                                className="btn btn-secondary mx-2 col-auto"
+                                value="-pill"
+                                onClick={this.changeRadiusButton}
+                            >
+                                Pill
+                                </button>
+                            <button
+                                className="btn btn-secondary mx-2 col-auto"
+                                value="-0"
+                                onClick={this.changeRadiusButton}
+                            >
+                                Square
+                                </button>
+                        </div>
+                        {/* End outline*/}
+
+                        {/*Ukuran  */}
+                        <b className="text-center ">Ukuran Button</b>
+                        <div className="row mt-1 mx-1 mb-2">
+                            <button
+                                className="btn btn-secondary mx-3 col-3"
+                                value="btn-sm"
+                                onClick={this.changeSizeButton}
+                            >
+                                Small
+                            </button>
+                            <button
+                                className="btn btn-secondary mx-2 col-3"
+                                value=""
+                                onClick={this.changeSizeButton}
+                            >
+                                Medium
+                            </button>
+                            <button
+                                className="btn btn-secondary mx-3 col-3"
+                                value="btn-lg"
+                                onClick={this.changeSizeButton}
+                            >
+                                Large
+                            </button>
+                        </div>
+                        {/* End Ukuran*/}
+
+                        {/* Isi */}
+                        <b className="text-center">Isi Button</b>
+                        <div className="row mx-1 mt-1 mb-2">
+                            <input
+                                type="text"
+                                name="header"
+                                className="form-control"
+                                value={this.state.isi}
+                                onChange={this.changeIsiButton}
+                            />
+                        </div>
+                        {/* End Isi */}
+
+
                     </div>
-                    <div className="col-7">
+                    <div className="col-8   ">
                         <div className="container">
 
-                            {/* Tipe Alert */}
-                            <b className="text-center">Warna Alert</b>
-                            <div className="row">
+                            {/* Warna Bg */}
+                            <b className="text-center">Warna Background</b>
+                            <div className="row mt-1 mb-2">
                                 <button
                                     className="btn btn-light mx-1 col-auto"
                                     value="light"
-                                    onClick={this.changeTipeAlert}
+                                    onClick={this.changeWarnaDasar}
                                 >
                                     light
                 </button>
                                 <button
                                     className="btn btn-secondary mx-1 col-auto"
                                     value="secondary"
-                                    onClick={this.changeTipeAlert}
+                                    onClick={this.changeWarnaDasar}
                                 >
                                     secondary
-                </button>
+                                </button>
                                 <button
                                     className="btn btn-dark mx-1 col-auto"
                                     value="dark"
-                                    onClick={this.changeTipeAlert}
+                                    onClick={this.changeWarnaDasar}
                                 >
                                     dark
-                </button>
+                                </button>
                                 <button
                                     className="btn btn-primary mx-1 col-auto"
                                     value="primary"
-                                    onClick={this.changeTipeAlert}
+                                    onClick={this.changeWarnaDasar}
                                 >
                                     primary
-                </button>
+                                </button>
                                 <button
                                     className="btn btn-warning mx-1 col-auto"
                                     value="warning"
-                                    onClick={this.changeTipeAlert}
+                                    onClick={this.changeWarnaDasar}
                                 >
                                     warning
-                </button>
+                                </button>
                                 <button
                                     className="btn btn-danger mx-1 col-auto"
                                     value="danger"
-                                    onClick={this.changeTipeAlert}
+                                    onClick={this.changeWarnaDasar}
                                 >
                                     danger
-                </button>
+                                </button>
                                 <button
                                     className="btn btn-success mx-1 col-auto"
                                     value="success"
-                                    onClick={this.changeTipeAlert}
+                                    onClick={this.changeWarnaDasar}
                                 >
                                     success
-                </button>
+                                </button>
+                                <button
+                                    className="btn btn-white mx-1 col-auto"
+                                    value="a"
+                                    onClick={this.changeWarnaDasar}
+                                >
+                                    Transparent
+                                </button>
                             </div>
-                            {/* End Tipe Alert */}
+                            {/* End Warna BG */}
 
-                            {/*Warna Alert  */}
-                            <b className="text-center">Warna Text</b>
-                            <div className="row">
+                            {/* Tipe Button */}
+                            <b className="text-center">Warna Button</b>
+                            <div className="row mt-1 mb-2">
                                 <button
                                     className="btn btn-light mx-1 col-auto"
                                     value="light"
-                                    onClick={this.changeWarnaAlert}
+                                    onClick={this.changeTipeButton}
                                 >
                                     light
-                </button>
+                                </button>
                                 <button
                                     className="btn btn-secondary mx-1 col-auto"
                                     value="secondary"
-                                    onClick={this.changeWarnaAlert}
+                                    onClick={this.changeTipeButton}
                                 >
                                     secondary
-                </button>
+                                </button>
                                 <button
                                     className="btn btn-dark mx-1 col-auto"
                                     value="dark"
-                                    onClick={this.changeWarnaAlert}
+                                    onClick={this.changeTipeButton}
                                 >
                                     dark
-                </button>
+                                </button>
                                 <button
                                     className="btn btn-primary mx-1 col-auto"
                                     value="primary"
-                                    onClick={this.changeWarnaAlert}
+                                    onClick={this.changeTipeButton}
                                 >
                                     primary
-                </button>
+                                </button>
                                 <button
                                     className="btn btn-warning mx-1 col-auto"
                                     value="warning"
-                                    onClick={this.changeWarnaAlert}
+                                    onClick={this.changeTipeButton}
                                 >
                                     warning
-                </button>
+                                </button>
                                 <button
                                     className="btn btn-danger mx-1 col-auto"
                                     value="danger"
-                                    onClick={this.changeWarnaAlert}
+                                    onClick={this.changeTipeButton}
                                 >
                                     danger
-                </button>
+                                </button>
                                 <button
                                     className="btn btn-success mx-1 col-auto"
                                     value="success"
-                                    onClick={this.changeWarnaAlert}
+                                    onClick={this.changeTipeButton}
                                 >
                                     success
-                </button>
-                            </div>
-                            {/* End Warna Alert*/}
-
-                            {/* Judul */}
-                            <b className="text-center">Header Alert</b>
-                            <div className="row">
-                                <input
-                                    type="text"
-                                    name="header"
-                                    className="form-control"
-                                    value={this.state.judul}
-                                    onChange={this.changeJudulAlert}
-                                />
-                            </div>
-                            {/* End Judul */}
-
-                            {/* Isi */}
-                            <b className="text-center">Isi Alert</b>
-                            <div className="row">
-                                <input
-                                    type="text"
-                                    name="header"
-                                    className="form-control"
-                                    value={this.state.isi}
-                                    onChange={this.changeIsiAlert}
-                                />
-                            </div>
-                            {/* End Isi */}
-
-                            {/* Align */}
-                            <b className="text-left ">Text Align</b>
-                            <div className="row">
+                                </button>
                                 <button
-                                    className="btn btn-secondary mx-1 col-3 mx-4"
-                                    value="left"
-                                    onClick={this.changeAlignAlert}
+                                    className="btn btn-white mx-1 col-auto"
+                                    value="a"
+                                    onClick={this.changeTipeButton}
                                 >
-                                    left
-                </button>
-                                <button
-                                    className="btn btn-secondary mx-1 col-3 mx-4"
-                                    value="center"
-                                    onClick={this.changeAlignAlert}
-                                >
-                                    center
-                </button>
-                                <button
-                                    className="btn btn-secondary mx-1 col-3 mx-4"
-                                    value="right"
-                                    onClick={this.changeAlignAlert}
-                                >
-                                    right
-                </button>
+                                    transparent
+                                </button>
                             </div>
-                            {/* End Align */}
+                            {/* End Tipe Button */}
+
+                            {/*Warna Button  */}
+                            <b className="text-center">Warna Outline Button</b>
+                            <div className="row mt-1 mb-2">
+                                <button
+                                    className="btn btn-light mx-1 col-auto"
+                                    value="light"
+                                    onClick={this.changeWarnaButton}
+                                >
+                                    light
+                                </button>
+                                <button
+                                    className="btn btn-secondary mx-1 col-auto"
+                                    value="secondary"
+                                    onClick={this.changeWarnaButton}
+                                >
+                                    secondary
+                                </button>
+                                <button
+                                    className="btn btn-dark mx-1 col-auto"
+                                    value="dark"
+                                    onClick={this.changeWarnaButton}
+                                >
+                                    dark
+                                </button>
+                                <button
+                                    className="btn btn-primary mx-1 col-auto"
+                                    value="primary"
+                                    onClick={this.changeWarnaButton}
+                                >
+                                    primary
+                                </button>
+                                <button
+                                    className="btn btn-warning mx-1 col-auto"
+                                    value="warning"
+                                    onClick={this.changeWarnaButton}
+                                >
+                                    warning
+                                </button>
+                                <button
+                                    className="btn btn-danger mx-1 col-auto"
+                                    value="danger"
+                                    onClick={this.changeWarnaButton}
+                                >
+                                    danger
+                                </button>
+                                <button
+                                    className="btn btn-success mx-1 col-auto"
+                                    value="success"
+                                    onClick={this.changeWarnaButton}
+                                >
+                                    success
+                                </button>
+                                <button
+                                    className="btn btn-white mx-1 col-auto"
+                                    value="a"
+                                    onClick={this.changeWarnaButton}
+                                >
+                                    transparent
+                                </button>
+                            </div>
+                            {/* End Warna Button*/}
+
                         </div>
 
                     </div>
