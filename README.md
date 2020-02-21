@@ -2,9 +2,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Main Feature
 
-Alert Generator
-Button Generator
-Card Generator
+Alert Generator<br>
+Button Generator<br>
+Card Generator<br>
 
 ## Available Scripts
 
