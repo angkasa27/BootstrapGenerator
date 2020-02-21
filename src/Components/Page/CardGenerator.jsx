@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Card from "../Asset/Card";
-import Hasil from "../Asset/HasilCard";
+import Hasil from "../Asset/HasilCard.jsx";
 
 class CardGenerator extends Component {
   constructor() {
