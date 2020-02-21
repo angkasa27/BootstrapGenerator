@@ -44,7 +44,7 @@ class AlertGenerator extends Component {
         </h1>
 
         <div className="row">
-          <div className="col-5">
+          <div className="col-md-5 col-sm-12">
             <Alert
               index="2"
               tipe={this.state.tipe}
@@ -59,7 +59,7 @@ class AlertGenerator extends Component {
 
             {/* Judul */}
             <b className="text-center">Header Alert</b>
-            <div className="row mt-1 mb-2">
+            <div className="row mt-1 mx-1 mb-2">
               <input
                 type="text"
                 name="header"
@@ -72,7 +72,7 @@ class AlertGenerator extends Component {
 
             {/* Isi */}
             <b className="text-center">Isi Alert</b>
-            <div className="row mt-1 mb-2">
+            <div className="row mt-1 mx-1 mb-2">
               <input
                 type="text"
                 name="header"
@@ -87,21 +87,21 @@ class AlertGenerator extends Component {
             <b className="text-left ">Text Align</b>
             <div className="row mt-1 mb-2">
               <button
-                className="btn btn-secondary col-3 mx-3"
+                className="btn btn-secondary col-md-3 mt-1 mx-3"
                 value="left"
                 onClick={this.changeAlignAlert}
               >
                 left
                 </button>
               <button
-                className="btn btn-secondary col-3 mx-3"
+                className="btn btn-secondary col-md-3 mt-1 mx-3"
                 value="center"
                 onClick={this.changeAlignAlert}
               >
                 center
                 </button>
               <button
-                className="btn btn-secondary col-3 mx-3"
+                className="btn btn-secondary col-md-3 mt-1 mx-3"
                 value="right"
                 onClick={this.changeAlignAlert}
               >
@@ -113,56 +113,56 @@ class AlertGenerator extends Component {
 
 
           </div>
-          <div className="col-7">
+          <div className="col-md-7 col-sm-12">
             <div className="container">
 
               {/* Tipe Alert */}
               <b className="text-center">Warna Alert</b>
-              <div className="row mt-1 mb-2">
+              <div className="row mb-2">
                 <button
-                  className="btn btn-light mx-1 col-auto"
+                  className="btn btn-light mx-1 mt-1 col-auto"
                   value="light"
                   onClick={this.changeTipeAlert}
                 >
                   light
                 </button>
                 <button
-                  className="btn btn-secondary mx-1 col-auto"
+                  className="btn btn-secondary mx-1 mt-1 col-auto"
                   value="secondary"
                   onClick={this.changeTipeAlert}
                 >
                   secondary
                 </button>
                 <button
-                  className="btn btn-dark mx-1 col-auto"
+                  className="btn btn-dark mx-1 mt-1 col-auto"
                   value="dark"
                   onClick={this.changeTipeAlert}
                 >
                   dark
                 </button>
                 <button
-                  className="btn btn-primary mx-1 col-auto"
+                  className="btn btn-primary mx-1 mt-1 col-auto"
                   value="primary"
                   onClick={this.changeTipeAlert}
                 >
                   primary
                 </button>
                 <button
-                  className="btn btn-warning mx-1 col-auto"
+                  className="btn btn-warning mx-1 mt-1 col-auto"
                   value="warning"
                   onClick={this.changeTipeAlert}
                 >
                   warning
                 </button>
                 <button
-                  className="btn btn-danger mx-1 col-auto"
+                  className="btn btn-danger mx-1 mt-1 col-auto"
                   value="danger"
                   onClick={this.changeTipeAlert}
                 >
                   danger
                 </button>
                 <button
-                  className="btn btn-success mx-1 col-auto"
+                  className="btn btn-success mx-1 mt-1 col-auto"
                   value="success"
                   onClick={this.changeTipeAlert}
                 >
@@ -173,51 +173,51 @@ class AlertGenerator extends Component {
 
               {/*Warna Alert  */}
               <b className="text-center">Warna Text</b>
-              <div className="row mt-1 mb-2">
+              <div className="row mb-2">
                 <button
-                  className="btn btn-light mx-1 col-auto"
+                  className="btn btn-light mx-1 mt-1 col-auto"
                   value="light"
                   onClick={this.changeWarnaAlert}
                 >
                   light
                 </button>
                 <button
-                  className="btn btn-secondary mx-1 col-auto"
+                  className="btn btn-secondary mx-1 mt-1 col-auto"
                   value="secondary"
                   onClick={this.changeWarnaAlert}
                 >
                   secondary
                 </button>
                 <button
-                  className="btn btn-dark mx-1 col-auto"
+                  className="btn btn-dark mx-1 mt-1 col-auto"
                   value="dark"
                   onClick={this.changeWarnaAlert}
                 >
                   dark
                 </button>
                 <button
-                  className="btn btn-primary mx-1 col-auto"
+                  className="btn btn-primary mx-1 mt-1 col-auto"
                   value="primary"
                   onClick={this.changeWarnaAlert}
                 >
                   primary
                 </button>
                 <button
-                  className="btn btn-warning mx-1 col-auto"
+                  className="btn btn-warning mx-1 mt-1 col-auto"
                   value="warning"
                   onClick={this.changeWarnaAlert}
                 >
                   warning
                 </button>
                 <button
-                  className="btn btn-danger mx-1 col-auto"
+                  className="btn btn-danger mx-1 mt-1 col-auto"
                   value="danger"
                   onClick={this.changeWarnaAlert}
                 >
                   danger
                 </button>
                 <button
-                  className="btn btn-success mx-1 col-auto"
+                  className="btn btn-success mx-1 mt-1 col-auto"
                   value="success"
                   onClick={this.changeWarnaAlert}
                 >
@@ -226,7 +226,7 @@ class AlertGenerator extends Component {
               </div>
               {/* End Warna Alert*/}
 
-              <div className="row">
+              <div className="row mb-5">
                 <Hasil
                   tipe={this.state.tipe}
                   warna={this.state.warna}
