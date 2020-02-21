@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-// import Hasil from "../Asset/HasilButton";
+import Hasil from "../Asset/HasilButton";
 
 class ButtonGenerator extends Component {
     constructor() {
         super();
         this.state = {
-            tipe: "success",
+            tipe: "btn-success",
             isi: "Send",
             warnaO: "",
             radius: "",
@@ -43,8 +43,8 @@ class ButtonGenerator extends Component {
 
     render() {
         return (
-            <div className="App container mt-5">
-                <h1 className="mb-5 mt-5 text-center">
+            <div className="App container">
+                <h1 className="mb-5 mt-3 text-center">
                     Button Generator
                 </h1>
 
@@ -54,7 +54,7 @@ class ButtonGenerator extends Component {
                         {/* Button Show */}
                         <div className={"row mx-1 mb-3 bg-" + this.state.warnadasar}>
                             <div className="col my-5 justify-content-md-center">
-                                <button type="button" class={" btn " + this.state.size + " btn-" + this.state.tipe + " btn-outline-" + this.state.warnaO + " rounded" + this.state.radius}>{this.state.isi}</button>
+                                <button type="button" class={" btn " + this.state.size + " " + this.state.tipe + " " + this.state.warnaO + " rounded" + this.state.radius}>{this.state.isi}</button>
                             </div>
                         </div>
 
@@ -206,56 +206,56 @@ class ButtonGenerator extends Component {
                             <div className="row mt-1 mb-2">
                                 <button
                                     className="btn btn-light mx-1 col-auto"
-                                    value="light"
+                                    value="btn-light"
                                     onClick={this.changeTipeButton}
                                 >
                                     light
                                 </button>
                                 <button
                                     className="btn btn-secondary mx-1 col-auto"
-                                    value="secondary"
+                                    value="btn-secondary"
                                     onClick={this.changeTipeButton}
                                 >
                                     secondary
                                 </button>
                                 <button
                                     className="btn btn-dark mx-1 col-auto"
-                                    value="dark"
+                                    value="btn-dark"
                                     onClick={this.changeTipeButton}
                                 >
                                     dark
                                 </button>
                                 <button
                                     className="btn btn-primary mx-1 col-auto"
-                                    value="primary"
+                                    value="btn-primary"
                                     onClick={this.changeTipeButton}
                                 >
                                     primary
                                 </button>
                                 <button
                                     className="btn btn-warning mx-1 col-auto"
-                                    value="warning"
+                                    value="btn-warning"
                                     onClick={this.changeTipeButton}
                                 >
                                     warning
                                 </button>
                                 <button
                                     className="btn btn-danger mx-1 col-auto"
-                                    value="danger"
+                                    value="btn-danger"
                                     onClick={this.changeTipeButton}
                                 >
                                     danger
                                 </button>
                                 <button
                                     className="btn btn-success mx-1 col-auto"
-                                    value="success"
+                                    value="btn-success"
                                     onClick={this.changeTipeButton}
                                 >
                                     success
                                 </button>
                                 <button
                                     className="btn btn-white mx-1 col-auto"
-                                    value="a"
+                                    value=""
                                     onClick={this.changeTipeButton}
                                 >
                                     transparent
@@ -268,62 +268,70 @@ class ButtonGenerator extends Component {
                             <div className="row mt-1 mb-2">
                                 <button
                                     className="btn btn-light mx-1 col-auto"
-                                    value="light"
+                                    value="btn-outline-light"
                                     onClick={this.changeWarnaButton}
                                 >
                                     light
                                 </button>
                                 <button
                                     className="btn btn-secondary mx-1 col-auto"
-                                    value="secondary"
+                                    value="btn-outline-secondary"
                                     onClick={this.changeWarnaButton}
                                 >
                                     secondary
                                 </button>
                                 <button
                                     className="btn btn-dark mx-1 col-auto"
-                                    value="dark"
+                                    value="btn-outline-dark"
                                     onClick={this.changeWarnaButton}
                                 >
                                     dark
                                 </button>
                                 <button
                                     className="btn btn-primary mx-1 col-auto"
-                                    value="primary"
+                                    value="btn-outline-primary"
                                     onClick={this.changeWarnaButton}
                                 >
                                     primary
                                 </button>
                                 <button
                                     className="btn btn-warning mx-1 col-auto"
-                                    value="warning"
+                                    value="btn-outline-warning"
                                     onClick={this.changeWarnaButton}
                                 >
                                     warning
                                 </button>
                                 <button
                                     className="btn btn-danger mx-1 col-auto"
-                                    value="danger"
+                                    value="btn-outline-danger"
                                     onClick={this.changeWarnaButton}
                                 >
                                     danger
                                 </button>
                                 <button
                                     className="btn btn-success mx-1 col-auto"
-                                    value="success"
+                                    value="btn-outline-success"
                                     onClick={this.changeWarnaButton}
                                 >
                                     success
                                 </button>
                                 <button
                                     className="btn btn-white mx-1 col-auto"
-                                    value="a"
+                                    value=""
                                     onClick={this.changeWarnaButton}
                                 >
                                     transparent
                                 </button>
                             </div>
                             {/* End Warna Button*/}
+
+                            <Hasil
+                                size={this.state.size}
+                                tipe={this.state.tipe}
+                                warnaO={this.state.warnaO}
+                                radius={this.state.radius}
+                                isi={this.state.isi}
+                            />
 
                         </div>
 

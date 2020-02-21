@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React from 'react';
 
-class Hasil extends Component {
+class hasil extends React.Component {
 
     constructor(props) {
         super(props);
@@ -19,7 +19,7 @@ class Hasil extends Component {
 
     render() {
         return (
-            <div className="text-left px-3 pt-3 pb-1 mt-3 bg-dark text-light rounded container">
+            <div className="text-left px-3 pt-3 pb-1 mt-3 bg-dark text-light rounded">
                 <div className="row mb-2">
                     <h4 className="col-6">Output</h4>
                     {
@@ -34,21 +34,17 @@ class Hasil extends Component {
                 </div>
 
 
-                <form className="row">
+                <form>
                     <textarea
-                        className="form-control kode bg-dark text-white border-0" rows="5" disable
+                        className="form-control kode bg-dark text-white border-0" rows="3" disable
                         ref={(textarea) => this.textArea = textarea}
-                        value={
-                            '<div class="alert alert-' + this.props.tipe + " text-" + this.props.warna + " text-" + this.props.align + "> \r" +
-                            '\t<h4>' + this.props.judul + "</h4>\r" +
-                            '\t<p>' + this.props.isi + "</p>\r" +
-                            "</div>"
-                        }
+                        value={'<button type="button" class="btn ' + this.props.size + ' ' + this.props.tipe + ' ' + this.props.warnaO + ' rounded' + this.props.radius + '">\r \t' + this.props.isi + '\r</button>'}
                     />
                 </form>
             </div>
         );
     }
+
 }
 
-export default Hasil;
+export default hasil;

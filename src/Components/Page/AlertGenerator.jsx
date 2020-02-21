@@ -38,16 +38,13 @@ class AlertGenerator extends Component {
 
   render() {
     return (
-      <div className="App container mt-5">
-        <h1 className="mb-5 mt-5 text-center">
+      <div className="App container">
+        <h1 className="mb-5 mt-3 text-center">
           Alert Generator
         </h1>
 
-
         <div className="row">
           <div className="col-5">
-
-            {/* Alert Show */}
             <Alert
               index="2"
               tipe={this.state.tipe}
@@ -59,21 +56,69 @@ class AlertGenerator extends Component {
             </Alert>
             {/* End Alert Show */}
 
-            <div className="row">
-              <Hasil
-                tipe={this.state.tipe}
-                warna={this.state.warna}
-                align={this.state.align}
-                judul={this.state.judul}
-                isi={this.state.isi}
-              /></div>
+
+            {/* Judul */}
+            <b className="text-center">Header Alert</b>
+            <div className="row mt-1 mb-2">
+              <input
+                type="text"
+                name="header"
+                className="form-control"
+                value={this.state.judul}
+                onChange={this.changeJudulAlert}
+              />
+            </div>
+            {/* End Judul */}
+
+            {/* Isi */}
+            <b className="text-center">Isi Alert</b>
+            <div className="row mt-1 mb-2">
+              <input
+                type="text"
+                name="header"
+                className="form-control"
+                value={this.state.isi}
+                onChange={this.changeIsiAlert}
+              />
+            </div>
+            {/* End Isi */}
+
+            {/* Align */}
+            <b className="text-left ">Text Align</b>
+            <div className="row mt-1 mb-2">
+              <button
+                className="btn btn-secondary col-3 mx-3"
+                value="left"
+                onClick={this.changeAlignAlert}
+              >
+                left
+                </button>
+              <button
+                className="btn btn-secondary col-3 mx-3"
+                value="center"
+                onClick={this.changeAlignAlert}
+              >
+                center
+                </button>
+              <button
+                className="btn btn-secondary col-3 mx-3"
+                value="right"
+                onClick={this.changeAlignAlert}
+              >
+                right
+                </button>
+            </div>
+            {/* End Align */}
+
+
+
           </div>
           <div className="col-7">
             <div className="container">
 
               {/* Tipe Alert */}
               <b className="text-center">Warna Alert</b>
-              <div className="row">
+              <div className="row mt-1 mb-2">
                 <button
                   className="btn btn-light mx-1 col-auto"
                   value="light"
@@ -128,7 +173,7 @@ class AlertGenerator extends Component {
 
               {/*Warna Alert  */}
               <b className="text-center">Warna Text</b>
-              <div className="row">
+              <div className="row mt-1 mb-2">
                 <button
                   className="btn btn-light mx-1 col-auto"
                   value="light"
@@ -181,58 +226,17 @@ class AlertGenerator extends Component {
               </div>
               {/* End Warna Alert*/}
 
-              {/* Judul */}
-              <b className="text-center">Header Alert</b>
               <div className="row">
-                <input
-                  type="text"
-                  name="header"
-                  className="form-control"
-                  value={this.state.judul}
-                  onChange={this.changeJudulAlert}
+                <Hasil
+                  tipe={this.state.tipe}
+                  warna={this.state.warna}
+                  align={this.state.align}
+                  judul={this.state.judul}
+                  isi={this.state.isi}
                 />
               </div>
-              {/* End Judul */}
 
-              {/* Isi */}
-              <b className="text-center">Isi Alert</b>
-              <div className="row">
-                <input
-                  type="text"
-                  name="header"
-                  className="form-control"
-                  value={this.state.isi}
-                  onChange={this.changeIsiAlert}
-                />
-              </div>
-              {/* End Isi */}
-
-              {/* Align */}
-              <b className="text-left ">Text Align</b>
-              <div className="row">
-                <button
-                  className="btn btn-secondary mx-1 col-3 mx-4"
-                  value="left"
-                  onClick={this.changeAlignAlert}
-                >
-                  left
-                </button>
-                <button
-                  className="btn btn-secondary mx-1 col-3 mx-4"
-                  value="center"
-                  onClick={this.changeAlignAlert}
-                >
-                  center
-                </button>
-                <button
-                  className="btn btn-secondary mx-1 col-3 mx-4"
-                  value="right"
-                  onClick={this.changeAlignAlert}
-                >
-                  right
-                </button>
-              </div>
-              {/* End Align */}
+              {/* Alert Show */}
             </div>
 
           </div>

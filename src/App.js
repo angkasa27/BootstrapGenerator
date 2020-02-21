@@ -19,7 +19,7 @@ class App extends Component {
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <Link to="/Home" className="nav-item nav-link active text-light">
+                <Link to="/" className="nav-item nav-link active text-light">
                   Home<span class="sr-only">(current)</span>
                 </Link>
                 <Link to="/AlertGenerator" className="nav-item nav-link text-light">

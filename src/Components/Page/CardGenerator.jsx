@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Card from "../Asset/Card";
 import Hasil from "../Asset/HasilCard";
-import BackColor from "../Asset/BackgrounColor"
 
 class CardGenerator extends Component {
   constructor() {
@@ -81,7 +80,7 @@ class CardGenerator extends Component {
     return (
       <div className="App container mb-5">
 
-        <h1 className="mb-5 mt-5 text-center">
+        <h1 className="mb-5 mt-3 text-center">
           Card Generator
         </h1>
 
