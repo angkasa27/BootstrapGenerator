@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d5fea53cbe1e163df1f6adb0922abb5d",
+    "revision": "9303fbc07bcf203125f8e5dd53132941",
     "url": "/BootstrapGenerator/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/BootstrapGenerator/static/css/2.2ec3db0d.chunk.css"
   },
   {
-    "revision": "b17ba71b8816f4dd3bde",
+    "revision": "d7ff6dcd307afbf2bc2a",
     "url": "/BootstrapGenerator/static/css/main.f78922aa.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/BootstrapGenerator/static/js/2.087565dd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b17ba71b8816f4dd3bde",
-    "url": "/BootstrapGenerator/static/js/main.9d487079.chunk.js"
+    "revision": "d7ff6dcd307afbf2bc2a",
+    "url": "/BootstrapGenerator/static/js/main.62ce08b2.chunk.js"
   },
   {
     "revision": "761b100d4cc2f11067f3",
