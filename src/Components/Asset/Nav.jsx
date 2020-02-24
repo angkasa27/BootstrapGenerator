@@ -6,7 +6,7 @@ export default class Nav extends Component {
         return (
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark gaya">
                 <div className="container">
-                    <Link to="/Home" className="navbar-brand">
+                    <Link to="/" className="navbar-brand">
                         Bootstrap Generator
                     </Link>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"

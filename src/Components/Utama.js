@@ -9,6 +9,7 @@ import Home from "./Page/Home.jsx";
 const Utama = () => (
   <Switch>
     <Route exact path="/" component={Home} />
+    <Route path="/BootstrapGenerator" component={Home} />
     <Route path="/CardGenerator" component={CardGenerator} />
     <Route path="/AlertGenerator" component={AlertGenerator} />
     <Route path="/ButtonGenerator" component={ButtonGenerator} />
