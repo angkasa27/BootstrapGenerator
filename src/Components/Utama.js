@@ -4,7 +4,7 @@ import { Switch, Route } from "react-router-dom";
 import CardGenerator from "./Page/CardGenerator.jsx";
 import AlertGenerator from "./Page/AlertGenerator.jsx";
 import ButtonGenerator from "./Page/ButtonGenerator";
-import Home from "./Page/Home";
+import Home from "./Page/Home.jsx";
 
 const Utama = () => (
   <Switch>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Alert from "../Asset/Alert";
+import Alert from "../Asset/AlertShow";
 import Hasil from "../Asset/HasilAlert";
 
 class AlertGenerator extends Component {

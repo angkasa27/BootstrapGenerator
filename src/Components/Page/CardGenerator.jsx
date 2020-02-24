@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Card from "../Asset/Card";
+import Card from "../Asset/CardShow";
 import Hasil from "../Asset/HasilCard.jsx";
 
 class CardGenerator extends Component {
