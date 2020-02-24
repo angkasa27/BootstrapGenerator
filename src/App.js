@@ -11,7 +11,7 @@ class App extends Component {
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark gaya">
           <div className="container">
             <Link to="/Home" className="navbar-brand">
-              B-Gen
+              Bootstrap Generator
       </Link>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
               aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
