@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Card from "../Asset/CardShow";
 import Hasil from "../Asset/HasilCard.jsx";
+import Nav from "../Asset/Nav.jsx";
 
 class CardGenerator extends Component {
   constructor() {
@@ -78,403 +79,406 @@ class CardGenerator extends Component {
 
   render() {
     return (
-      <div className="App container mb-5">
+      <div>
 
-        <h1 className="mb-5 mt-3 text-center">
-          Card Generator
+        <Nav />
+        <div className="App container mb-5">
+          <h1 className="mb-5 mt-3 text-center">
+            Card Generator
         </h1>
 
-        <div className="row">
-          {/* Output */}
-          <div className={"col-md-5 col-sm-12 px-3 py-3 bg-" + this.state.warnadasar}>
-            <Card
-              ukuranjudul={this.state.ukuranjudul}
-              judulkartu={this.state.judulkartu}
-              warnabtn={this.state.warnabtn}
-              namabtn={this.state.namabtn}
-              ukuranisi={this.state.ukuranisi}
-              isikartu={this.state.isikartu}
-              cardbg={this.state.cardbg}
-              warnatxt={this.state.warnatxt}
-              aligntext={this.state.aligntext}
-              alignbtn={this.state.alignbtn}
-              alignjudul={this.state.alignjudul}
-              shadow={this.state.shadow}
-            />
+          <div className="row">
+            {/* Output */}
+            <div className={"col-md-5 col-sm-12 px-3 py-3 bg-" + this.state.warnadasar}>
+              <Card
+                ukuranjudul={this.state.ukuranjudul}
+                judulkartu={this.state.judulkartu}
+                warnabtn={this.state.warnabtn}
+                namabtn={this.state.namabtn}
+                ukuranisi={this.state.ukuranisi}
+                isikartu={this.state.isikartu}
+                cardbg={this.state.cardbg}
+                warnatxt={this.state.warnatxt}
+                aligntext={this.state.aligntext}
+                alignbtn={this.state.alignbtn}
+                alignjudul={this.state.alignjudul}
+                shadow={this.state.shadow}
+              />
+            </div>
+            {/* end output */}
+
+            {/* menu samping */}
+            <div className="col-md-7 col-sm-12">
+              {/* Memilih bg card */}
+              <b className="text-center">Card Color</b>
+              <div className="row mx-3">
+                <button
+                  className="btn btn-light mx-1 mt-1 col-auto"
+                  value="light"
+                  onClick={this.changeBgCard}
+                >
+                  light
+                </button>
+                <button
+                  className="btn btn-secondary mx-1 mt-1 col-auto"
+                  value="secondary"
+                  onClick={this.changeBgCard}
+                >
+                  secondary
+                </button>
+                <button
+                  className="btn btn-dark mx-1 mt-1 col-auto"
+                  value="dark"
+                  onClick={this.changeBgCard}
+                >
+                  dark
+                </button>
+                <button
+                  className="btn btn-primary mx-1 mt-1 col-auto"
+                  value="primary"
+                  onClick={this.changeBgCard}
+                >
+                  primary
+                </button>
+                <button
+                  className="btn btn-warning mx-1 mt-1 col-auto"
+                  value="warning"
+                  onClick={this.changeBgCard}
+                >
+                  warning
+                </button>
+                <button
+                  className="btn btn-danger mx-1 mt-1 col-auto"
+                  value="danger"
+                  onClick={this.changeBgCard}
+                >
+                  danger
+                </button>
+                <button
+                  className="btn btn-success mx-1 mt-1 col-auto"
+                  value="success"
+                  onClick={this.changeBgCard}
+                >
+                  success
+                </button>
+              </div>
+              {/* end */}
+
+              {/* memilih warna text */}
+              <b className="text-center">Text Color</b>
+              <div className="row mx-3">
+                <button
+                  className="btn btn-light mx-1 mt-1 col-auto"
+                  value="light"
+                  onClick={this.changeTxtColor}
+                >
+                  light
+                </button>
+                <button
+                  className="btn btn-secondary mx-1 mt-1 col-auto"
+                  value="secondary"
+                  onClick={this.changeTxtColor}
+                >
+                  secondary
+                </button>
+                <button
+                  className="btn btn-dark mx-1 mt-1 col-auto"
+                  value="dark"
+                  onClick={this.changeTxtColor}
+                >
+                  dark
+                </button>
+                <button
+                  className="btn btn-primary mx-1 mt-1 col-auto"
+                  value="primary"
+                  onClick={this.changeTxtColor}
+                >
+                  primary
+                </button>
+                <button
+                  className="btn btn-warning mx-1 mt-1 col-auto"
+                  value="warning"
+                  onClick={this.changeTxtColor}
+                >
+                  warning
+                </button>
+                <button
+                  className="btn btn-danger mx-1 mt-1 col-auto"
+                  value="danger"
+                  onClick={this.changeTxtColor}
+                >
+                  danger
+                </button>
+                <button
+                  className="btn btn-success mx-1 mt-1 col-auto"
+                  value="success"
+                  onClick={this.changeTxtColor}
+                >
+                  success
+                </button>
+              </div>
+              {/* end */}
+
+              {/* memilih warna btn */}
+              <b className="text-center">Button Color</b>
+              <div className="row mx-3">
+                <button
+                  className="btn btn-light mx-1 mt-1 col-auto"
+                  value="light"
+                  onClick={this.changeWarnaBtn}
+                >
+                  light
+                </button>
+                <button
+                  className="btn btn-secondary mx-1 mt-1 col-auto"
+                  value="secondary"
+                  onClick={this.changeWarnaBtn}
+                >
+                  secondary
+                </button>
+                <button
+                  className="btn btn-dark mx-1 mt-1 col-auto"
+                  value="dark"
+                  onClick={this.changeWarnaBtn}
+                >
+                  dark
+                </button>
+                <button
+                  className="btn btn-primary mx-1 mt-1 col-auto"
+                  value="primary"
+                  onClick={this.changeWarnaBtn}
+                >
+                  primary
+                </button>
+                <button
+                  className="btn btn-warning mx-1 mt-1 col-auto"
+                  value="warning"
+                  onClick={this.changeWarnaBtn}
+                >
+                  warning
+                </button>
+                <button
+                  className="btn btn-danger mx-1 mt-1 col-auto"
+                  value="danger"
+                  onClick={this.changeWarnaBtn}
+                >
+                  danger
+                </button>
+                <button
+                  className="btn btn-success mx-1 mt-1 col-auto"
+                  value="success"
+                  onClick={this.changeWarnaBtn}
+                >
+                  success
+                </button>
+              </div>
+              {/* end */}
+
+              {/* memilih warna dasar */}
+              <b className="text-center">Background Color</b>
+              <div className="row mx-3">
+                <button
+                  className="btn btn-light mx-1 mt-1 col-auto"
+                  value="light"
+                  onClick={this.changeWarnaDasar}
+                >
+                  light
+                </button>
+                <button
+                  className="btn btn-secondary mx-1 mt-1 col-auto"
+                  value="secondary"
+                  onClick={this.changeWarnaDasar}
+                >
+                  secondary
+                </button>
+                <button
+                  className="btn btn-dark mx-1 mt-1 col-auto"
+                  value="dark"
+                  onClick={this.changeWarnaDasar}
+                >
+                  dark
+                </button>
+                <button
+                  className="btn btn-primary mx-1 mt-1 col-auto"
+                  value="primary"
+                  onClick={this.changeWarnaDasar}
+                >
+                  primary
+                </button>
+                <button
+                  className="btn btn-warning mx-1 mt-1 col-auto"
+                  value="warning"
+                  onClick={this.changeWarnaDasar}
+                >
+                  warning
+                </button>
+                <button
+                  className="btn btn-danger mx-1 mt-1 col-auto"
+                  value="danger"
+                  onClick={this.changeWarnaDasar}
+                >
+                  danger
+                </button>
+                <button
+                  className="btn btn-success mx-1 mt-1 col-auto"
+                  value="success"
+                  onClick={this.changeWarnaDasar}
+                >
+                  success
+                </button>
+              </div>
+
+              {/* end */}
+            </div>
+            {/* End menu samping */}
           </div>
-          {/* end output */}
+          {/* End baris 1 */}
 
-          {/* menu samping */}
-          <div className="col-md-7 col-sm-12">
-            {/* Memilih bg card */}
-            <b className="text-center">Card Color</b>
-            <div className="row mx-3">
-              <button
-                className="btn btn-light mx-1 mt-1 col-auto"
-                value="light"
-                onClick={this.changeBgCard}
-              >
-                light
-                </button>
-              <button
-                className="btn btn-secondary mx-1 mt-1 col-auto"
-                value="secondary"
-                onClick={this.changeBgCard}
-              >
-                secondary
-                </button>
-              <button
-                className="btn btn-dark mx-1 mt-1 col-auto"
-                value="dark"
-                onClick={this.changeBgCard}
-              >
-                dark
-                </button>
-              <button
-                className="btn btn-primary mx-1 mt-1 col-auto"
-                value="primary"
-                onClick={this.changeBgCard}
-              >
-                primary
-                </button>
-              <button
-                className="btn btn-warning mx-1 mt-1 col-auto"
-                value="warning"
-                onClick={this.changeBgCard}
-              >
-                warning
-                </button>
-              <button
-                className="btn btn-danger mx-1 mt-1 col-auto"
-                value="danger"
-                onClick={this.changeBgCard}
-              >
-                danger
-                </button>
-              <button
-                className="btn btn-success mx-1 mt-1 col-auto"
-                value="success"
-                onClick={this.changeBgCard}
-              >
-                success
-                </button>
-            </div>
-            {/* end */}
+          <div className="row mt-4">
+            {/* second setting */}
+            <div className="col-md-6 col-sm-12 pr-5">
+              {/* Edit Bagian Judul */}
+              <div className="row mb-2">
+                <div className="col-8">
+                  <b className="text-center ">Teks Judul</b>
+                  <input
+                    type="text"
+                    className="form-control"
+                    value={this.state.judulkartu}
+                    onChange={this.changeJudulKartu}
+                  />
+                </div>
+                <div className="col-4">
+                  <b className="text-left">Ukuran Judul</b>
+                  <select
+                    className="form-control"
+                    value={this.state.ukuranjudul}
+                    onChange={this.changeUkuranJudul}
+                  >
+                    <option value="1">Heading 1</option>
+                    <option value="2">Heading 2</option>
+                    <option value="3">Heading 3</option>
+                    <option value="4">Heading 4</option>
+                    <option value="5">Heading 5</option>
+                    <option value="6">Heading 6</option>
+                  </select>
+                </div>
+              </div>
+              {/* End edit bagian judul */}
 
-            {/* memilih warna text */}
-            <b className="text-center">Text Color</b>
-            <div className="row mx-3">
-              <button
-                className="btn btn-light mx-1 mt-1 col-auto"
-                value="light"
-                onClick={this.changeTxtColor}
-              >
-                light
-                </button>
-              <button
-                className="btn btn-secondary mx-1 mt-1 col-auto"
-                value="secondary"
-                onClick={this.changeTxtColor}
-              >
-                secondary
-                </button>
-              <button
-                className="btn btn-dark mx-1 mt-1 col-auto"
-                value="dark"
-                onClick={this.changeTxtColor}
-              >
-                dark
-                </button>
-              <button
-                className="btn btn-primary mx-1 mt-1 col-auto"
-                value="primary"
-                onClick={this.changeTxtColor}
-              >
-                primary
-                </button>
-              <button
-                className="btn btn-warning mx-1 mt-1 col-auto"
-                value="warning"
-                onClick={this.changeTxtColor}
-              >
-                warning
-                </button>
-              <button
-                className="btn btn-danger mx-1 mt-1 col-auto"
-                value="danger"
-                onClick={this.changeTxtColor}
-              >
-                danger
-                </button>
-              <button
-                className="btn btn-success mx-1 mt-1 col-auto"
-                value="success"
-                onClick={this.changeTxtColor}
-              >
-                success
-                </button>
-            </div>
-            {/* end */}
+              {/* Edit bagian isi */}
+              <div className="row my-2">
+                <div className="col-8">
+                  <b className="text-center">Teks Isi</b>
+                  <input
+                    type="text"
+                    className="form-control"
+                    value={this.state.isikartu}
+                    onChange={this.changeIsiKartu}
+                  />
+                </div>
+                <div className="col-4">
+                  <b className="text-left">Ukuran Isi</b>
+                  <select
+                    className="form-control"
+                    value={this.state.ukuranisi}
+                    onChange={this.changeUkuranIsi}
+                  >
+                    <option value="1">Heading 1</option>
+                    <option value="2">Heading 2</option>
+                    <option value="3">Heading 3</option>
+                    <option value="4">Heading 4</option>
+                    <option value="5">Heading 5</option>
+                    <option value="6">Heading 6</option>
+                  </select>
+                </div>
+              </div>
+              {/* end bagian isi */}
 
-            {/* memilih warna btn */}
-            <b className="text-center">Button Color</b>
-            <div className="row mx-3">
-              <button
-                className="btn btn-light mx-1 mt-1 col-auto"
-                value="light"
-                onClick={this.changeWarnaBtn}
-              >
-                light
-                </button>
-              <button
-                className="btn btn-secondary mx-1 mt-1 col-auto"
-                value="secondary"
-                onClick={this.changeWarnaBtn}
-              >
-                secondary
-                </button>
-              <button
-                className="btn btn-dark mx-1 mt-1 col-auto"
-                value="dark"
-                onClick={this.changeWarnaBtn}
-              >
-                dark
-                </button>
-              <button
-                className="btn btn-primary mx-1 mt-1 col-auto"
-                value="primary"
-                onClick={this.changeWarnaBtn}
-              >
-                primary
-                </button>
-              <button
-                className="btn btn-warning mx-1 mt-1 col-auto"
-                value="warning"
-                onClick={this.changeWarnaBtn}
-              >
-                warning
-                </button>
-              <button
-                className="btn btn-danger mx-1 mt-1 col-auto"
-                value="danger"
-                onClick={this.changeWarnaBtn}
-              >
-                danger
-                </button>
-              <button
-                className="btn btn-success mx-1 mt-1 col-auto"
-                value="success"
-                onClick={this.changeWarnaBtn}
-              >
-                success
-                </button>
-            </div>
-            {/* end */}
+              {/* bagian tombol */}
+              <div className="row">
+                <div className="col">
+                  <b className="text-center my-2">Teks Tombol</b>
+                  <input
+                    type="text"
+                    className="form-control"
+                    value={this.state.namabtn}
+                    onChange={this.changeNamaBtn}
+                  />
+                </div>
+              </div>
+              {/* end */}
 
-            {/* memilih warna dasar */}
-            <b className="text-center">Background Color</b>
-            <div className="row mx-3">
-              <button
-                className="btn btn-light mx-1 mt-1 col-auto"
-                value="light"
-                onClick={this.changeWarnaDasar}
-              >
-                light
-                </button>
-              <button
-                className="btn btn-secondary mx-1 mt-1 col-auto"
-                value="secondary"
-                onClick={this.changeWarnaDasar}
-              >
-                secondary
-                </button>
-              <button
-                className="btn btn-dark mx-1 mt-1 col-auto"
-                value="dark"
-                onClick={this.changeWarnaDasar}
-              >
-                dark
-                </button>
-              <button
-                className="btn btn-primary mx-1 mt-1 col-auto"
-                value="primary"
-                onClick={this.changeWarnaDasar}
-              >
-                primary
-                </button>
-              <button
-                className="btn btn-warning mx-1 mt-1 col-auto"
-                value="warning"
-                onClick={this.changeWarnaDasar}
-              >
-                warning
-                </button>
-              <button
-                className="btn btn-danger mx-1 mt-1 col-auto"
-                value="danger"
-                onClick={this.changeWarnaDasar}
-              >
-                danger
-                </button>
-              <button
-                className="btn btn-success mx-1 mt-1 col-auto"
-                value="success"
-                onClick={this.changeWarnaDasar}
-              >
-                success
-                </button>
+              {/* Posisi */}
+              <div className="row mt-2">
+                {/* Judul */}
+                <div className="col-4">
+                  <b className="text-center">Posisi Judul</b>
+                  <select
+                    className="form-control"
+                    value={this.state.alignjudul}
+                    onChange={this.changeAlignJudul}
+                  >
+                    <option value="left">Left</option>
+                    <option value="center">Center</option>
+                    <option value="right">Right</option>
+                  </select>
+                </div>
+                {/* end */}
+
+                {/* Posisi Isi */}
+                <div className="col-4">
+                  <b className="text-center">Posisi Isi</b>
+                  <select
+                    className="form-control"
+                    value={this.state.aligntext}
+                    onChange={this.changeAlignText}
+                  >
+                    <option value="left">Left</option>
+                    <option value="center">Center</option>
+                    <option value="right">Right</option>
+                  </select>
+                </div>
+                {/* end */}
+
+                {/* button */}
+                <div className="col-4">
+                  <b className="text-center">Posisi Tombol</b>
+                  <select
+                    className="form-control"
+                    value={this.state.alignbtn}
+                    onChange={this.changeAlignBtn}
+                  >
+                    <option value="left">Left</option>
+                    <option value="center">Center</option>
+                    <option value="right">Right</option>
+                  </select>
+                </div>
+                {/* end */}
+              </div>
+              {/* end posisi*/}
             </div>
 
-            {/* end */}
+            {/* SourceCode */}
+            <div className="col-sm-12 col-md-6">
+              <b>Source Code</b>
+              <Hasil
+                ukuranjudul={this.state.ukuranjudul}
+                judulkartu={this.state.judulkartu}
+                warnabtn={this.state.warnabtn}
+                namabtn={this.state.namabtn}
+                ukuranisi={this.state.ukuranisi}
+                isikartu={this.state.isikartu}
+                cardbg={this.state.cardbg}
+                warnatxt={this.state.warnatxt}
+                aligntext={this.state.aligntext}
+                alignbtn={this.state.alignbtn}
+                alignjudul={this.state.alignjudul}
+              />
+            </div>
           </div>
-          {/* End menu samping */}
+
         </div>
-        {/* End baris 1 */}
-
-        <div className="row mt-4">
-          {/* second setting */}
-          <div className="col-md-6 col-sm-12 pr-5">
-            {/* Edit Bagian Judul */}
-            <div className="row mb-2">
-              <div className="col-8">
-                <b className="text-center ">Teks Judul</b>
-                <input
-                  type="text"
-                  className="form-control"
-                  value={this.state.judulkartu}
-                  onChange={this.changeJudulKartu}
-                />
-              </div>
-              <div className="col-4">
-                <b className="text-left">Ukuran Judul</b>
-                <select
-                  className="form-control"
-                  value={this.state.ukuranjudul}
-                  onChange={this.changeUkuranJudul}
-                >
-                  <option value="1">Heading 1</option>
-                  <option value="2">Heading 2</option>
-                  <option value="3">Heading 3</option>
-                  <option value="4">Heading 4</option>
-                  <option value="5">Heading 5</option>
-                  <option value="6">Heading 6</option>
-                </select>
-              </div>
-            </div>
-            {/* End edit bagian judul */}
-
-            {/* Edit bagian isi */}
-            <div className="row my-2">
-              <div className="col-8">
-                <b className="text-center">Teks Isi</b>
-                <input
-                  type="text"
-                  className="form-control"
-                  value={this.state.isikartu}
-                  onChange={this.changeIsiKartu}
-                />
-              </div>
-              <div className="col-4">
-                <b className="text-left">Ukuran Isi</b>
-                <select
-                  className="form-control"
-                  value={this.state.ukuranisi}
-                  onChange={this.changeUkuranIsi}
-                >
-                  <option value="1">Heading 1</option>
-                  <option value="2">Heading 2</option>
-                  <option value="3">Heading 3</option>
-                  <option value="4">Heading 4</option>
-                  <option value="5">Heading 5</option>
-                  <option value="6">Heading 6</option>
-                </select>
-              </div>
-            </div>
-            {/* end bagian isi */}
-
-            {/* bagian tombol */}
-            <div className="row">
-              <div className="col">
-                <b className="text-center my-2">Teks Tombol</b>
-                <input
-                  type="text"
-                  className="form-control"
-                  value={this.state.namabtn}
-                  onChange={this.changeNamaBtn}
-                />
-              </div>
-            </div>
-            {/* end */}
-
-            {/* Posisi */}
-            <div className="row mt-2">
-              {/* Judul */}
-              <div className="col-4">
-                <b className="text-center">Posisi Judul</b>
-                <select
-                  className="form-control"
-                  value={this.state.alignjudul}
-                  onChange={this.changeAlignJudul}
-                >
-                  <option value="left">Left</option>
-                  <option value="center">Center</option>
-                  <option value="right">Right</option>
-                </select>
-              </div>
-              {/* end */}
-
-              {/* Posisi Isi */}
-              <div className="col-4">
-                <b className="text-center">Posisi Isi</b>
-                <select
-                  className="form-control"
-                  value={this.state.aligntext}
-                  onChange={this.changeAlignText}
-                >
-                  <option value="left">Left</option>
-                  <option value="center">Center</option>
-                  <option value="right">Right</option>
-                </select>
-              </div>
-              {/* end */}
-
-              {/* button */}
-              <div className="col-4">
-                <b className="text-center">Posisi Tombol</b>
-                <select
-                  className="form-control"
-                  value={this.state.alignbtn}
-                  onChange={this.changeAlignBtn}
-                >
-                  <option value="left">Left</option>
-                  <option value="center">Center</option>
-                  <option value="right">Right</option>
-                </select>
-              </div>
-              {/* end */}
-            </div>
-            {/* end posisi*/}
-          </div>
-
-          {/* SourceCode */}
-          <div className="col-sm-12 col-md-6">
-            <b>Source Code</b>
-            <Hasil
-              ukuranjudul={this.state.ukuranjudul}
-              judulkartu={this.state.judulkartu}
-              warnabtn={this.state.warnabtn}
-              namabtn={this.state.namabtn}
-              ukuranisi={this.state.ukuranisi}
-              isikartu={this.state.isikartu}
-              cardbg={this.state.cardbg}
-              warnatxt={this.state.warnatxt}
-              aligntext={this.state.aligntext}
-              alignbtn={this.state.alignbtn}
-              alignjudul={this.state.alignjudul}
-            />
-          </div>
-        </div>
-
       </div>
     );
   }
