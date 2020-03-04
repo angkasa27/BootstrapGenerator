@@ -69,17 +69,17 @@ export const Empty = [
 
 export const Align = [
     {
-        warnaBtn: "secondary col-md-3 mx-3",
+        warnaBtn: "dark ",
         value: "left",
         nama: "left"
     },
     {
-        warnaBtn: "secondary col-md-3 mx-3",
+        warnaBtn: "dark ",
         value: "center",
         nama: "center"
     },
     {
-        warnaBtn: "secondary col-md-3 mx-3",
+        warnaBtn: "dark ",
         value: "right",
         nama: "right"
     }

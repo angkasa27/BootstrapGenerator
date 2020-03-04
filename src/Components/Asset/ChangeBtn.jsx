@@ -8,7 +8,7 @@ export default class ChangeBtn extends Component {
                     return (
                         <button
                             key={id}
-                            className={"btn btn-" + tipe.warnaBtn + this.props.btnClass}
+                            className={"btn btn-" + tipe.warnaBtn + " " + this.props.btnClass}
                             value={tipe.value}
                             onClick={this.props.fungsi}
                         >

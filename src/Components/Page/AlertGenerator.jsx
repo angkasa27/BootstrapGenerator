@@ -3,7 +3,8 @@ import Alert from "../Asset/AlertShow";
 import Hasil from "../Asset/HasilAlert";
 import Nav from "../Asset/Nav.jsx";
 import Button from "../Asset/ChangeBtn"
-import { Warna, Align, Empty } from "../Asset/ButtonValue"
+import { Warna, Align } from "../Asset/ButtonValue"
+import Judul from "../Asset/ChangeJudul"
 
 class AlertGenerator extends Component {
   constructor() {
@@ -63,7 +64,7 @@ class AlertGenerator extends Component {
 
 
               {/* Judul */}
-              <b className="text-center">Header Alert</b>
+              <Judul textClass="text-center">Header Alert</Judul>
               <div className="row mt-1 mx-1 mb-2">
                 <input
                   type="text"
@@ -76,7 +77,7 @@ class AlertGenerator extends Component {
               {/* End Judul */}
 
               {/* Isi */}
-              <b className="text-center">Isi Alert</b>
+              <Judul textClass="text-center">Isi Alert</Judul>
               <div className="row mt-1 mx-1 mb-2">
                 <input
                   type="text"
@@ -89,10 +90,8 @@ class AlertGenerator extends Component {
               {/* End Isi */}
 
               {/* Align */}
-              <b className="text-left ">Text Align</b>
-              <div className="row mt-1 mb-2">
-                <Button tipe={Align} fungsi={this.changeAlignAlert} />
-              </div>
+              <Judul textClass="text-center" divClass="row justify-content-center">Text Align</Judul>
+              <Button tipe={Align} fungsi={this.changeAlignAlert} divClass="row mb-2 mt-1 btn-group" btnClass="px-4" />
               {/* End Align */}
 
 
@@ -102,14 +101,15 @@ class AlertGenerator extends Component {
               <div className="container">
 
                 {/* Tipe Alert */}
-                <b className="text-center">Warna Alert</b>
-                <div className="row justify-content-md-center">
+                <Judul textClass="text-center">Warna Background Alert</Judul>
+                {/* <div className="row justify-content-md-center">
                   <Button tipe={Empty} fungsi={this.changeTipeAlert} divClass="row mb-2" btnClass="mt-1 col-auto px-4 rounded-0 py-4" />
-                </div>
+                </div> */}
+                <Button tipe={Warna} fungsi={this.changeTipeAlert} divClass="row mb-2" btnClass="mx-1 mt-1 col-auto" />
                 {/* End Tipe Alert */}
 
                 {/*Warna Alert  */}
-                <b className="text-center">Warna Text</b>
+                <Judul textClass="text-center">Warna Text Alert</Judul>
                 <Button tipe={Warna} fungsi={this.changeWarnaAlert} divClass="row mb-2" btnClass="mx-1 mt-1 col-auto" />
                 {/* End Warna Alert*/}
 
