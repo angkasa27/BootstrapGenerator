@@ -57,7 +57,7 @@ class ButtonGenerator extends Component {
                             {/* Button Show */}
                             <div className={"row mx-1 mb-3 bg-" + this.state.warnadasar}>
                                 <div className="col my-5 justify-content-md-center">
-                                    <button type="button" class={" btn " + this.state.size + " " + this.state.tipe + " " + this.state.warnaO + " rounded" + this.state.radius}>{this.state.isi}</button>
+                                    <button type="button" className={" btn " + this.state.size + " " + this.state.tipe + " " + this.state.warnaO + " rounded" + this.state.radius}>{this.state.isi}</button>
                                 </div>
                             </div>
 

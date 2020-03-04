@@ -36,7 +36,7 @@ class hasil extends React.Component {
 
                 <form>
                     <textarea
-                        className="form-control kode bg-dark text-white border-0" rows="3" disable
+                        className="form-control kode bg-dark text-white border-0" rows="3" readOnly
                         ref={(textarea) => this.textArea = textarea}
                         value={'<button type="button" class="btn ' + this.props.size + ' ' + this.props.tipe + ' ' + this.props.warnaO + ' rounded' + this.props.radius + '">\r \t' + this.props.isi + '\r</button>'}
                     />

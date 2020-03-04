@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Alert from "../Asset/AlertShow";
 import Hasil from "../Asset/HasilAlert";
 import Nav from "../Asset/Nav.jsx";
+import Button from "../Asset/ChangeBtn"
+import { Warna, Align, Empty } from "../Asset/ButtonValue"
 
 class AlertGenerator extends Component {
   constructor() {
@@ -89,27 +91,7 @@ class AlertGenerator extends Component {
               {/* Align */}
               <b className="text-left ">Text Align</b>
               <div className="row mt-1 mb-2">
-                <button
-                  className="btn btn-secondary col-md-3 mt-1 mx-3"
-                  value="left"
-                  onClick={this.changeAlignAlert}
-                >
-                  left
-                </button>
-                <button
-                  className="btn btn-secondary col-md-3 mt-1 mx-3"
-                  value="center"
-                  onClick={this.changeAlignAlert}
-                >
-                  center
-                </button>
-                <button
-                  className="btn btn-secondary col-md-3 mt-1 mx-3"
-                  value="right"
-                  onClick={this.changeAlignAlert}
-                >
-                  right
-                </button>
+                <Button tipe={Align} fungsi={this.changeAlignAlert} />
               </div>
               {/* End Align */}
 
@@ -121,112 +103,14 @@ class AlertGenerator extends Component {
 
                 {/* Tipe Alert */}
                 <b className="text-center">Warna Alert</b>
-                <div className="row mb-2">
-                  <button
-                    className="btn btn-light mx-1 mt-1 col-auto"
-                    value="light"
-                    onClick={this.changeTipeAlert}
-                  >
-                    light
-                </button>
-                  <button
-                    className="btn btn-secondary mx-1 mt-1 col-auto"
-                    value="secondary"
-                    onClick={this.changeTipeAlert}
-                  >
-                    secondary
-                </button>
-                  <button
-                    className="btn btn-dark mx-1 mt-1 col-auto"
-                    value="dark"
-                    onClick={this.changeTipeAlert}
-                  >
-                    dark
-                </button>
-                  <button
-                    className="btn btn-primary mx-1 mt-1 col-auto"
-                    value="primary"
-                    onClick={this.changeTipeAlert}
-                  >
-                    primary
-                </button>
-                  <button
-                    className="btn btn-warning mx-1 mt-1 col-auto"
-                    value="warning"
-                    onClick={this.changeTipeAlert}
-                  >
-                    warning
-                </button>
-                  <button
-                    className="btn btn-danger mx-1 mt-1 col-auto"
-                    value="danger"
-                    onClick={this.changeTipeAlert}
-                  >
-                    danger
-                </button>
-                  <button
-                    className="btn btn-success mx-1 mt-1 col-auto"
-                    value="success"
-                    onClick={this.changeTipeAlert}
-                  >
-                    success
-                </button>
+                <div className="row justify-content-md-center">
+                  <Button tipe={Empty} fungsi={this.changeTipeAlert} divClass="row mb-2" btnClass="mt-1 col-auto px-4 rounded-0 py-4" />
                 </div>
                 {/* End Tipe Alert */}
 
                 {/*Warna Alert  */}
                 <b className="text-center">Warna Text</b>
-                <div className="row mb-2">
-                  <button
-                    className="btn btn-light mx-1 mt-1 col-auto"
-                    value="light"
-                    onClick={this.changeWarnaAlert}
-                  >
-                    light
-                </button>
-                  <button
-                    className="btn btn-secondary mx-1 mt-1 col-auto"
-                    value="secondary"
-                    onClick={this.changeWarnaAlert}
-                  >
-                    secondary
-                </button>
-                  <button
-                    className="btn btn-dark mx-1 mt-1 col-auto"
-                    value="dark"
-                    onClick={this.changeWarnaAlert}
-                  >
-                    dark
-                </button>
-                  <button
-                    className="btn btn-primary mx-1 mt-1 col-auto"
-                    value="primary"
-                    onClick={this.changeWarnaAlert}
-                  >
-                    primary
-                </button>
-                  <button
-                    className="btn btn-warning mx-1 mt-1 col-auto"
-                    value="warning"
-                    onClick={this.changeWarnaAlert}
-                  >
-                    warning
-                </button>
-                  <button
-                    className="btn btn-danger mx-1 mt-1 col-auto"
-                    value="danger"
-                    onClick={this.changeWarnaAlert}
-                  >
-                    danger
-                </button>
-                  <button
-                    className="btn btn-success mx-1 mt-1 col-auto"
-                    value="success"
-                    onClick={this.changeWarnaAlert}
-                  >
-                    success
-                </button>
-                </div>
+                <Button tipe={Warna} fungsi={this.changeWarnaAlert} divClass="row mb-2" btnClass="mx-1 mt-1 col-auto" />
                 {/* End Warna Alert*/}
 
                 <div className="row mb-5">

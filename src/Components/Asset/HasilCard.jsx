@@ -36,7 +36,7 @@ class Hasil extends Component {
 
         <form>
           <textarea
-            className="form-control kode bg-dark text-white border-0" rows="9" disable
+            className="form-control kode bg-dark text-white border-0" rows="9" readOnly
             ref={(textarea) => this.textArea = textarea}
             value={'<div class="card border-0 bg-' + this.props.cardbg + " text-" + this.props.warnatxt + '"> \r' +
               '\t<div class="card-body text-' + this.props.alignbtn + '">\r' +

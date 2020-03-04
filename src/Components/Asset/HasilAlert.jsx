@@ -36,7 +36,7 @@ class Hasil extends Component {
 
                 <form className="row">
                     <textarea
-                        className="form-control kode bg-dark text-white border-0" rows="5" disable
+                        className="form-control kode bg-dark text-white border-0" rows="5" readOnly
                         ref={(textarea) => this.textArea = textarea}
                         value={
                             '<div class="alert alert-' + this.props.tipe + " text-" + this.props.warna + " text-" + this.props.align + "> \r" +

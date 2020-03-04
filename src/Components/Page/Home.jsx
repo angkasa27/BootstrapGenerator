@@ -5,10 +5,10 @@ class Home extends Component {
   render() {
     return (
       <div className="bg-dark">
-        <div class="jumbotron jumbotron-fluid">
-          <div class="container">
-            <h1 class="display-4">Bootstrap Generator</h1>
-            <p class="lead">Bootstrap has a lot of customization. We make it more easy for you to pick it</p>
+        <div className="jumbotron jumbotron-fluid">
+          <div className="container">
+            <h1 className="display-4">Bootstrap Generator</h1>
+            <p className="lead">Bootstrap has a lot of customization. We make it more easy for you to pick it</p>
           </div>
         </div>
         <div className="container pb-5">
@@ -17,9 +17,9 @@ class Home extends Component {
             {/* <div className="col-md-2"></div> */}
 
             <div className="col-md-3">
-              <div class="card rounded-lg shadow border-0 bg-warning ">
-                <h3 class="card-title bold text-center text-dark mt-3">Alert Generator</h3>
-                <div class="card-body">
+              <div className="card rounded-lg shadow border-0 bg-warning ">
+                <h3 className="card-title bold text-center text-dark mt-3">Alert Generator</h3>
+                <div className="card-body">
                   <ul className="text-dark">
                     <li >Customize text color</li>
                     <li className="mt-2">Customize alert color</li>
@@ -37,9 +37,9 @@ class Home extends Component {
             </div>
 
             <div className="col-md-3">
-              <div class="card rounded-lg shadow border-0 bg-warning ">
-                <h3 class="card-title bold text-center text-dark mt-3">Button Generator</h3>
-                <div class="card-body">
+              <div className="card rounded-lg shadow border-0 bg-warning ">
+                <h3 className="card-title bold text-center text-dark mt-3">Button Generator</h3>
+                <div className="card-body">
                   <ul className="text-dark">
                     <li >Customize text color</li>
                     <li className="mt-2">Customize alert color</li>
@@ -57,9 +57,9 @@ class Home extends Component {
             </div>
 
             <div className="col-md-3">
-              <div class="card rounded-lg shadow border-0 bg-warning ">
-                <h3 class="card-title bold text-center text-dark mt-3">Card Generator</h3>
-                <div class="card-body">
+              <div className="card rounded-lg shadow border-0 bg-warning ">
+                <h3 className="card-title bold text-center text-dark mt-3">Card Generator</h3>
+                <div className="card-body">
                   <ul className="text-dark">
                     <li >Customize text color</li>
                     <li className="mt-2">Customize alert color</li>
