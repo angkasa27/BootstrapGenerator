@@ -91,7 +91,7 @@ class AlertGenerator extends Component {
 
               {/* Align */}
               <Judul textClass="text-center" divClass="row justify-content-center">Text Align</Judul>
-              <Button tipe={Align} fungsi={this.changeAlignAlert} divClass="row mb-2 mt-1 btn-group" btnClass="px-4" />
+              <Button tipe={Align} fungsi={this.changeAlignAlert} divClass="row mb-2 mt-1 btn-group" btnClass="px-5" />
               {/* End Align */}
 
 
