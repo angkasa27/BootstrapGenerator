@@ -67,13 +67,13 @@ class ButtonGenerator extends Component {
                             {/* End Button Show */}
 
                             {/*outline  */}
-                            <Judul textClass="text-center">Jenis Outline Button</Judul>
-                            <Button tipe={Outline} fungsi={this.changeRadiusButton} divClass="row mx-1 mt-1 mb-2" btnClass="mx-2 mt-1 col-md-auto" />
+                            <Judul textClass="text-center" divClass="row justify-content-center">Bentuk Button</Judul>
+                            <Button tipe={Outline} fungsi={this.changeRadiusButton} divClass="row mx-1 mt-1 mb-2 btn-group" btnClass="px-3" />
                             {/* End outline*/}
 
                             {/*Ukuran  */}
                             <Judul textClass="text-center" divClass="row justify-content-center">Ukuran Button</Judul>
-                            <Button tipe={Size} fungsi={this.changeRadiusButton} divClass="row mx-1 mt-1 mb-2 justify-content-center" btnClass="mx-2 col-3  " />
+                            <Button tipe={Size} fungsi={this.changeRadiusButton} divClass="row mx-1 mt-1 mb-2 justify-content-center btn-group" btnClass="px-4" />
                             {/* End Ukuran*/}
 
                             {/* Isi */}

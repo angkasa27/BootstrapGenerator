@@ -201,7 +201,7 @@ export const Outline = [
     },
     {
         warnaBtn: "secondary",
-        value: "rounded-square",
+        value: "rounded-0",
         nama: "square"
     }
 ]

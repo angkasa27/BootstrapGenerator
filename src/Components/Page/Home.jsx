@@ -29,7 +29,7 @@ class Home extends Component {
                   </ul>
                   <div className="text-center mt-4">
                     <Link to="/AlertGenerator" className="btn btn-dark rounded-pill">
-                      Buka
+                      Open
                   </Link>
                   </div>
                 </div>
@@ -49,7 +49,7 @@ class Home extends Component {
                   </ul>
                   <div className="text-center mt-4">
                     <Link to="/ButtonGenerator" className="btn btn-dark rounded-pill">
-                      Buka
+                      Open
                   </Link>
                   </div>
                 </div>
@@ -69,7 +69,7 @@ class Home extends Component {
                   </ul>
                   <div className="text-center mt-4">
                     <Link to="/CardGenerator" className="btn btn-dark rounded-pill">
-                      Buka
+                      Open
                   </Link>
                   </div>
                 </div>
