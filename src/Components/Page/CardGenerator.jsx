@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import Card from "../Asset/CardShow";
 import Hasil from "../Asset/HasilCard.jsx";
 import Nav from "../Asset/Nav.jsx";
+import Button from "../Asset/ChangeBtn"
+import { Warna } from "../Asset/ButtonValue"
+import Judul from "../Asset/ChangeJudul"
 
 class CardGenerator extends Component {
   constructor() {
@@ -110,224 +113,23 @@ class CardGenerator extends Component {
             {/* menu samping */}
             <div className="col-md-7 col-sm-12">
               {/* Memilih bg card */}
-              <b className="text-center">Card Color</b>
-              <div className="row mx-3">
-                <button
-                  className="btn btn-light mx-1 mt-1 col-auto"
-                  value="light"
-                  onClick={this.changeBgCard}
-                >
-                  light
-                </button>
-                <button
-                  className="btn btn-secondary mx-1 mt-1 col-auto"
-                  value="secondary"
-                  onClick={this.changeBgCard}
-                >
-                  secondary
-                </button>
-                <button
-                  className="btn btn-dark mx-1 mt-1 col-auto"
-                  value="dark"
-                  onClick={this.changeBgCard}
-                >
-                  dark
-                </button>
-                <button
-                  className="btn btn-primary mx-1 mt-1 col-auto"
-                  value="primary"
-                  onClick={this.changeBgCard}
-                >
-                  primary
-                </button>
-                <button
-                  className="btn btn-warning mx-1 mt-1 col-auto"
-                  value="warning"
-                  onClick={this.changeBgCard}
-                >
-                  warning
-                </button>
-                <button
-                  className="btn btn-danger mx-1 mt-1 col-auto"
-                  value="danger"
-                  onClick={this.changeBgCard}
-                >
-                  danger
-                </button>
-                <button
-                  className="btn btn-success mx-1 mt-1 col-auto"
-                  value="success"
-                  onClick={this.changeBgCard}
-                >
-                  success
-                </button>
-              </div>
+              <Judul textClass="text-center">Card Color</Judul>
+              <Button tipe={Warna} fungsi={this.changeBgCard} divClass="row mx-3" btnClass="mx-1 mt-1 col-auto" />
               {/* end */}
 
               {/* memilih warna text */}
-              <b className="text-center">Text Color</b>
-              <div className="row mx-3">
-                <button
-                  className="btn btn-light mx-1 mt-1 col-auto"
-                  value="light"
-                  onClick={this.changeTxtColor}
-                >
-                  light
-                </button>
-                <button
-                  className="btn btn-secondary mx-1 mt-1 col-auto"
-                  value="secondary"
-                  onClick={this.changeTxtColor}
-                >
-                  secondary
-                </button>
-                <button
-                  className="btn btn-dark mx-1 mt-1 col-auto"
-                  value="dark"
-                  onClick={this.changeTxtColor}
-                >
-                  dark
-                </button>
-                <button
-                  className="btn btn-primary mx-1 mt-1 col-auto"
-                  value="primary"
-                  onClick={this.changeTxtColor}
-                >
-                  primary
-                </button>
-                <button
-                  className="btn btn-warning mx-1 mt-1 col-auto"
-                  value="warning"
-                  onClick={this.changeTxtColor}
-                >
-                  warning
-                </button>
-                <button
-                  className="btn btn-danger mx-1 mt-1 col-auto"
-                  value="danger"
-                  onClick={this.changeTxtColor}
-                >
-                  danger
-                </button>
-                <button
-                  className="btn btn-success mx-1 mt-1 col-auto"
-                  value="success"
-                  onClick={this.changeTxtColor}
-                >
-                  success
-                </button>
-              </div>
+              <Judul textClass="text-center">Text Color</Judul>
+              <Button tipe={Warna} fungsi={this.changeTxtColor} divClass="row mx-3" btnClass="mx-1 mt-1 col-auto" />
               {/* end */}
 
               {/* memilih warna btn */}
-              <b className="text-center">Button Color</b>
-              <div className="row mx-3">
-                <button
-                  className="btn btn-light mx-1 mt-1 col-auto"
-                  value="light"
-                  onClick={this.changeWarnaBtn}
-                >
-                  light
-                </button>
-                <button
-                  className="btn btn-secondary mx-1 mt-1 col-auto"
-                  value="secondary"
-                  onClick={this.changeWarnaBtn}
-                >
-                  secondary
-                </button>
-                <button
-                  className="btn btn-dark mx-1 mt-1 col-auto"
-                  value="dark"
-                  onClick={this.changeWarnaBtn}
-                >
-                  dark
-                </button>
-                <button
-                  className="btn btn-primary mx-1 mt-1 col-auto"
-                  value="primary"
-                  onClick={this.changeWarnaBtn}
-                >
-                  primary
-                </button>
-                <button
-                  className="btn btn-warning mx-1 mt-1 col-auto"
-                  value="warning"
-                  onClick={this.changeWarnaBtn}
-                >
-                  warning
-                </button>
-                <button
-                  className="btn btn-danger mx-1 mt-1 col-auto"
-                  value="danger"
-                  onClick={this.changeWarnaBtn}
-                >
-                  danger
-                </button>
-                <button
-                  className="btn btn-success mx-1 mt-1 col-auto"
-                  value="success"
-                  onClick={this.changeWarnaBtn}
-                >
-                  success
-                </button>
-              </div>
+              <Judul textClass="text-center">Button Color</Judul>
+              <Button tipe={Warna} fungsi={this.changeWarnaBtn} divClass="row mx-3" btnClass="mx-1 mt-1 col-auto" />
               {/* end */}
 
               {/* memilih warna dasar */}
-              <b className="text-center">Background Color</b>
-              <div className="row mx-3">
-                <button
-                  className="btn btn-light mx-1 mt-1 col-auto"
-                  value="light"
-                  onClick={this.changeWarnaDasar}
-                >
-                  light
-                </button>
-                <button
-                  className="btn btn-secondary mx-1 mt-1 col-auto"
-                  value="secondary"
-                  onClick={this.changeWarnaDasar}
-                >
-                  secondary
-                </button>
-                <button
-                  className="btn btn-dark mx-1 mt-1 col-auto"
-                  value="dark"
-                  onClick={this.changeWarnaDasar}
-                >
-                  dark
-                </button>
-                <button
-                  className="btn btn-primary mx-1 mt-1 col-auto"
-                  value="primary"
-                  onClick={this.changeWarnaDasar}
-                >
-                  primary
-                </button>
-                <button
-                  className="btn btn-warning mx-1 mt-1 col-auto"
-                  value="warning"
-                  onClick={this.changeWarnaDasar}
-                >
-                  warning
-                </button>
-                <button
-                  className="btn btn-danger mx-1 mt-1 col-auto"
-                  value="danger"
-                  onClick={this.changeWarnaDasar}
-                >
-                  danger
-                </button>
-                <button
-                  className="btn btn-success mx-1 mt-1 col-auto"
-                  value="success"
-                  onClick={this.changeWarnaDasar}
-                >
-                  success
-                </button>
-              </div>
-
+              <Judul textClass="text-center">Background Color</Judul>
+              <Button tipe={Warna} fungsi={this.changeWarnaDasar} divClass="row mx-3" btnClass="mx-1 mt-1 col-auto" />
               {/* end */}
             </div>
             {/* End menu samping */}
