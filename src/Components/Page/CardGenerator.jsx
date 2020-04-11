@@ -113,22 +113,22 @@ class CardGenerator extends Component {
             {/* menu samping */}
             <div className="col-md-7 col-sm-12">
               {/* Memilih bg card */}
-              <Judul textClass="text-center">Card Color</Judul>
+              <Judul textClass="text-center" divClass="row justify-content-center">Card Color</Judul>
               <Button tipe={Warna} fungsi={this.changeBgCard} divClass="row mx-3" btnClass="mx-1 mt-1 col-auto" />
               {/* end */}
 
               {/* memilih warna text */}
-              <Judul textClass="text-center">Text Color</Judul>
+              <Judul textClass="text-center" divClass="row justify-content-center">Text Color</Judul>
               <Button tipe={Warna} fungsi={this.changeTxtColor} divClass="row mx-3" btnClass="mx-1 mt-1 col-auto" />
               {/* end */}
 
               {/* memilih warna btn */}
-              <Judul textClass="text-center">Button Color</Judul>
+              <Judul textClass="text-center" divClass="row justify-content-center">Button Color</Judul>
               <Button tipe={Warna} fungsi={this.changeWarnaBtn} divClass="row mx-3" btnClass="mx-1 mt-1 col-auto" />
               {/* end */}
 
               {/* memilih warna dasar */}
-              <Judul textClass="text-center">Background Color</Judul>
+              <Judul textClass="text-center" divClass="row justify-content-center">Background Color</Judul>
               <Button tipe={Warna} fungsi={this.changeWarnaDasar} divClass="row mx-3" btnClass="mx-1 mt-1 col-auto" />
               {/* end */}
             </div>
@@ -263,7 +263,6 @@ class CardGenerator extends Component {
 
             {/* SourceCode */}
             <div className="col-sm-12 col-md-6">
-              <b>Source Code</b>
               <Hasil
                 ukuranjudul={this.state.ukuranjudul}
                 judulkartu={this.state.judulkartu}

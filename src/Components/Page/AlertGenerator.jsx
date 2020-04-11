@@ -64,7 +64,7 @@ class AlertGenerator extends Component {
 
 
               {/* Judul */}
-              <Judul textClass="text-center">Header Alert</Judul>
+              <Judul textClass="text-center" divClass="row justify-content-center">Header Alert</Judul>
               <div className="row mt-1 mx-1 mb-2">
                 <input
                   type="text"
@@ -77,7 +77,7 @@ class AlertGenerator extends Component {
               {/* End Judul */}
 
               {/* Isi */}
-              <Judul textClass="text-center">Isi Alert</Judul>
+              <Judul textClass="text-center" divClass="row justify-content-center">Isi Alert</Judul>
               <div className="row mt-1 mx-1 mb-2">
                 <input
                   type="text"
@@ -91,7 +91,10 @@ class AlertGenerator extends Component {
 
               {/* Align */}
               <Judul textClass="text-center" divClass="row justify-content-center">Text Align</Judul>
-              <Button tipe={Align} fungsi={this.changeAlignAlert} divClass="row mb-2 mt-1 btn-group" btnClass="px-5" />
+              <div className="row justify-content-center mb-2 mt-1">
+                <Button tipe={Align} fungsi={this.changeAlignAlert} divClass="btn-group" btnClass="px-5" />
+              </div>
+
               {/* End Align */}
 
 
@@ -101,7 +104,7 @@ class AlertGenerator extends Component {
               <div className="container">
 
                 {/* Tipe Alert */}
-                <Judul textClass="text-center">Warna Background Alert</Judul>
+                <Judul textClass="text-center" divClass="row justify-content-center">Warna Background Alert</Judul>
                 {/* <div className="row justify-content-md-center">
                   <Button tipe={Empty} fungsi={this.changeTipeAlert} divClass="row mb-2" btnClass="mt-1 col-auto px-4 rounded-0 py-4" />
                 </div> */}
@@ -109,7 +112,7 @@ class AlertGenerator extends Component {
                 {/* End Tipe Alert */}
 
                 {/*Warna Alert  */}
-                <Judul textClass="text-center">Warna Text Alert</Judul>
+                <Judul textClass="text-center" divClass="row justify-content-center">Warna Text Alert</Judul>
                 <Button tipe={Warna} fungsi={this.changeWarnaAlert} divClass="row mb-2" btnClass="mx-1 mt-1 col-auto" />
                 {/* End Warna Alert*/}
 

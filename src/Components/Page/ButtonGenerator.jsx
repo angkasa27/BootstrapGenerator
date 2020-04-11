@@ -57,9 +57,9 @@ class ButtonGenerator extends Component {
                     <div className="row">
                         <div className="col-md-4 col-sm-12  border-right">
 
-                            {/* Button Show */}
+                            {/* Button Show Justify contet wont work*/}
                             <div className={"row mx-1 mb-3 bg-" + this.state.warnadasar}>
-                                <div className="col my-5 justify-content-md-center">
+                                <div className="col my-5 justify-content-center">
                                     <button type="button" className={" btn " + this.state.size + " " + this.state.tipe + " " + this.state.warnaO + " " + this.state.radius}>{this.state.isi}</button>
                                 </div>
                             </div>
@@ -67,17 +67,21 @@ class ButtonGenerator extends Component {
                             {/* End Button Show */}
 
                             {/*outline  */}
-                            <Judul textClass="text-center" divClass="row justify-content-center">Bentuk Button</Judul>
-                            <Button tipe={Outline} fungsi={this.changeRadiusButton} divClass="row mx-1 mt-1 mb-2 btn-group" btnClass="px-3" />
+                            <div className="row justify-content-center">
+                                <Judul textClass="text-center">Bentuk Button</Judul>
+                                <Button tipe={Outline} fungsi={this.changeRadiusButton} divClass=" mx-1 mt-1 mb-2 btn-group" btnClass="px-3" />
+                            </div>
                             {/* End outline*/}
 
                             {/*Ukuran  */}
-                            <Judul textClass="text-center" divClass="row justify-content-center">Ukuran Button</Judul>
-                            <Button tipe={Size} fungsi={this.changeRadiusButton} divClass="row mx-1 mt-1 mb-2 justify-content-center btn-group" btnClass="px-4" />
+                            <div className="row justify-content-center">
+                                <Judul textClass="text-center">Ukuran Button</Judul>
+                                <Button tipe={Size} fungsi={this.changeRadiusButton} divClass="mx-1 mt-1 mb-2 btn-group" btnClass="px-4" />
+                            </div>
                             {/* End Ukuran*/}
 
                             {/* Isi */}
-                            <Judul textClass="text-center">Isi Button</Judul>
+                            <Judul textClass="text-center" divClass="row justify-content-center">Isi Button</Judul>
                             <div className="row mx-1 mt-1 mb-2">
                                 <input
                                     type="text"
@@ -95,17 +99,17 @@ class ButtonGenerator extends Component {
                             <div className="container">
 
                                 {/* Warna Bg */}
-                                <Judul textClass="text-center">Warna Background</Judul>
+                                <Judul textClass="text-center" divClass="row justify-content-center">Warna Background</Judul>
                                 <Button tipe={WarnaTrans} fungsi={this.changeWarnaDasar} divClass="row mb-2" btnClass="mx-1 mt-1 col-auto" />
                                 {/* End Warna BG */}
 
                                 {/* Tipe Button */}
-                                <Judul textClass="text-center">Warna Button</Judul>
+                                <Judul textClass="text-center" divClass="row justify-content-center">Warna Button</Judul>
                                 <Button tipe={btnColor} fungsi={this.changeTipeButton} divClass="row mb-2" btnClass="mx-1 mt-1 col-auto" />
                                 {/* End Tipe Button */}
 
                                 {/*Warna Button  */}
-                                <Judul textClass="text-center">Warna Outline</Judul>
+                                <Judul textClass="text-center" divClass="row justify-content-center">Warna Outline</Judul>
                                 <Button tipe={btnOutline} fungsi={this.changeWarnaButton} divClass="row mb-2" btnClass="mx-1 mt-1 col-auto" />
                                 {/* End Warna Button*/}
 

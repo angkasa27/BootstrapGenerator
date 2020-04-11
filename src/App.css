@@ -1,28 +1,3 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 .gaya {
   font-family: 'Quicksand', sans-serif;
   padding: 10px;
@@ -39,6 +14,11 @@
 .kecil {
   font-size: small;
   color: grey;
+}
+
+.lead {
+  font-size: 30px !important;
+  font-weight: lighter !important;
 }
 
 @keyframes App-logo-spin {
