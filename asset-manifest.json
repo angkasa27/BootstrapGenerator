@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/BootstrapGenerator/static/css/main.b2ca2823.chunk.css",
-    "main.js": "/BootstrapGenerator/static/js/main.715401dd.chunk.js",
-    "main.js.map": "/BootstrapGenerator/static/js/main.715401dd.chunk.js.map",
+    "main.js": "/BootstrapGenerator/static/js/main.85e8c52d.chunk.js",
+    "main.js.map": "/BootstrapGenerator/static/js/main.85e8c52d.chunk.js.map",
     "runtime-main.js": "/BootstrapGenerator/static/js/runtime-main.7f2a4cef.js",
     "runtime-main.js.map": "/BootstrapGenerator/static/js/runtime-main.7f2a4cef.js.map",
     "static/css/2.2ec3db0d.chunk.css": "/BootstrapGenerator/static/css/2.2ec3db0d.chunk.css",
     "static/js/2.4a536b03.chunk.js": "/BootstrapGenerator/static/js/2.4a536b03.chunk.js",
     "static/js/2.4a536b03.chunk.js.map": "/BootstrapGenerator/static/js/2.4a536b03.chunk.js.map",
     "index.html": "/BootstrapGenerator/index.html",
-    "precache-manifest.129837d8682684ed8c1f9dab79565707.js": "/BootstrapGenerator/precache-manifest.129837d8682684ed8c1f9dab79565707.js",
+    "precache-manifest.a35cb793f5cf1247442b88e574ca669e.js": "/BootstrapGenerator/precache-manifest.a35cb793f5cf1247442b88e574ca669e.js",
     "service-worker.js": "/BootstrapGenerator/service-worker.js",
     "static/css/2.2ec3db0d.chunk.css.map": "/BootstrapGenerator/static/css/2.2ec3db0d.chunk.css.map",
     "static/css/main.b2ca2823.chunk.css.map": "/BootstrapGenerator/static/css/main.b2ca2823.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.2ec3db0d.chunk.css",
     "static/js/2.4a536b03.chunk.js",
     "static/css/main.b2ca2823.chunk.css",
-    "static/js/main.715401dd.chunk.js"
+    "static/js/main.85e8c52d.chunk.js"
   ]
 }
